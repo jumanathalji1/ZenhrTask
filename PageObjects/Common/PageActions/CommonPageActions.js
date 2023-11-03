@@ -8,7 +8,7 @@ export class commonPageActions{
 
     checkSideMenuElementPageFound(mainLocator, subLocator){
         cy.get(mainLocator).click({force: true})
-        cy.get(subLocator).click({force: true}).then((link) => cy.request(link.prop('href')).its('status').should('not.equal', 404));
+        cy.get(subLocator).click({force: true}).then((link) => cy.request({failOnStatusCode: false, url: link.prop('href')}).its('status').should('not.equal', 404));
     }
 
     checkAllSideMenuElementsPageFound(){

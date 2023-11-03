@@ -1,4 +1,6 @@
 {
-    "bButton" : "//*[@id='directory_char_list']/li[9]/a"
+    "bButton" : "#directory_char_list > :nth-child(9) > a",
+    "hidden": ".hidden",
+    "profilePhoto": ".employees-directory-image > .emp-img"
     
 }

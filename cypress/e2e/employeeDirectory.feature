@@ -16,3 +16,4 @@ Feature: Side Menu Feature
         Then Click on employees menu
         Then Click on employee directory
         Then Click on B button
+        And Assert more than two cards visible

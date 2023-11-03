@@ -58,3 +58,6 @@ Given('Visit ZenHR website', function(){
     employeeDirectoryActions.clickBButton()
   })
 
+  And('Assert more than two cards visible', function(){
+    employeeDirectoryActions.assertMoreThanTwoCardsVisible()
+  })
