@@ -1,0 +1,19 @@
+{
+  "name": "zenhr",
+  "version": "1.0.0",
+  "description": "Zenhr Task",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jumana",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.3.3",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}

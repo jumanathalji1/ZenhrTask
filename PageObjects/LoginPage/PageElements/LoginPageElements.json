@@ -1,0 +1,8 @@
+{
+
+"loginPageLocators": {
+    "emailLocator": "#user_login",
+    "passwordLocator": "#user_password",
+    "loginButtonLocator" : ".login-submit > .btn"
+}
+}

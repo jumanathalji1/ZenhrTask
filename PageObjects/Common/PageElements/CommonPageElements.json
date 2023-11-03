@@ -1,0 +1,30 @@
+{
+    "rightSideMenu" : ".dropdown-menu__collapse",
+    "logout" : ".nano-content > :nth-child(17) > .user-menu__item__link",
+    "sideMenu": ".navbar-header > .am-toggle-left-sidebar",
+"sideMenuLocators": {
+    "timeManagement" : ".side-nav__elements > :nth-child(4) > [href='#']",
+    "payroll" : ".side-nav__elements > :nth-child(5) > [href='#']",
+    "documents" : ".side-nav__elements > :nth-child(6) > [href='#']",
+    "requests" : ".side-nav__elements > :nth-child(7) > [href='#']",
+    "preformanceEvaluation" : ".side-nav__elements > :nth-child(8) > [href='#']",
+    "reports" : ".side-nav__elements > :nth-child(9) > [href='#']"    
+},
+"sideMenuSubLocators": {
+    "timeManagement" :{
+        "manageTimeoffs" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(2) > a"
+    },
+    "payroll" :{
+        "financialRequests" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(2) > a"
+
+    },
+    "documents" :{
+        "myDocuments" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(2) > a"},
+    "requests" :{
+        "requestTimeoff" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(2) > a"},
+    "preformanceEvaluation" :{
+        "manageEvaluationCycle" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(2) > a"},
+    "reports" :{
+        "customizedReportsGeneartor" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(2) > a"}
+}
+}
