@@ -3,6 +3,7 @@
     "logout" : ".nano-content > :nth-child(17) > .user-menu__item__link",
     "sideMenu": ".navbar-header > .am-toggle-left-sidebar",
 "sideMenuLocators": {
+    "employeesMenu": ".side-nav__elements > :nth-child(3) > [href='#']",
     "timeManagement" : ".side-nav__elements > :nth-child(4) > [href='#']",
     "payroll" : ".side-nav__elements > :nth-child(5) > [href='#']",
     "documents" : ".side-nav__elements > :nth-child(6) > [href='#']",
@@ -11,20 +12,106 @@
     "reports" : ".side-nav__elements > :nth-child(9) > [href='#']"    
 },
 "sideMenuSubLocators": {
+    "employeesMenu": {
+        "employeeDirectory": ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(2) > a",
+        "employeeManagement": ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(3) > a",
+        "massActions": ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(4) > a",
+        "employeesHierarchy": ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(5) > a",
+        "onboardingAndOffboarding": ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(6) > a",
+        "pendingEmployees": ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(7) > a",
+        "myTasks": ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(11) > a",
+        "manageTasks": ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(12) > a",
+        "manageDisciplinaryActions": ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(14) > a"
+    },
     "timeManagement" :{
-        "manageTimeoffs" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(2) > a"
+        "manageTimeoffs" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(2) > a",
+        "manageAdjustments" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(3) > a",
+        "manageMovedBalances" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(4) > a",
+        "myTimeoffRequests" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(5) > a",
+        "attendanceHistory" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(7) > a",
+        "myMissingPunchRequests" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(8) > a",
+        "attendanceSheets" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(9) > a",
+        "employeeShifts" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(10) > a",
+        "employeesGeolocations" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(11) > a",
+        "manageAttendanceRecords" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(12) > a",
+        "recommendations" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(13) > a",
+        "attendanceReport" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(15) > a",
+        "attendanceDetailsReport" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(16) > a",
+        "accumulativeAttendanceReport" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(17) > a"    
     },
     "payroll" :{
-        "financialRequests" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(2) > a"
+        "financialRequests" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(2) > a",
+        "overtimeRequests" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(3) > a",
+        "airTicketRequests" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(4) > a",
+        "mySalaries" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(5) > a",
+        "myTimesheets" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(6) > a",
+        "myLoans" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(7) > a",
+        "Manage Financial Transactions" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(9) > a",
+        "Manage Overtimes" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(10) > a",
+        "Manage Air Ticket Transactions" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(11) > a",
+        "Manage Part-Time Transactions" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(12) > a",
+        "Manage Salaries" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(13) > a",
+        "Manage Vacation In-Advance Salary" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(14) > a",
+        "Manage Timesheets" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(15) > a",
+        "Manage Loans" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(16) > a",
+        "Manage Expenses" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(17) > a",
+        "Manage Monthly Provisions" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(18) > a"
+
 
     },
     "documents" :{
-        "myDocuments" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(2) > a"},
+        "myDocuments" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(2) > a",
+        "sharedDocuments" : ".active > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(3) > a",
+        "manageDocuments" : ".active > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(4) > a",
+        "myHRLetters" : ".active > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(6) > a",
+        "manageHRLetters" : ".active > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(7) > a",
+        "templates" : ".active > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(8) > a",
+        "categories" : ".active > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(9) > a"
+    },
     "requests" :{
-        "requestTimeoff" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(2) > a"},
+        "requestTimeoff" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(2) > a",
+        "requestFinancialTransaction" : ".active > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(3) > a",
+        "requestOvertime" : ".active > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(4) > a",
+        "requestLoan" : ".active > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(5) > a",
+        "requestAirTicketTransaction" : ".active > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(6) > a",
+        "myMiscellaneousRequests" : ".active > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(8) > a",
+        "manageMiscellaneousRequests" : ".active > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(9) > a"
+    },
     "preformanceEvaluation" :{
-        "manageEvaluationCycle" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(2) > a"},
+        "manageEvaluationCycle" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(2) > a",
+        "evaluationProcess" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(3) > a",
+        "evaluationResultHistory" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(4) > a",
+        "myEvaluations" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(5) > a",
+        "performanceEvaluationReport" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(6) > a",
+        "oKRsReport" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(7) > a"
+    },
     "reports" :{
-        "customizedReportsGeneartor" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(2) > a"}
+        "customizedReportsGeneartor" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(2) > a",
+        "employeesReport" : ".active > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(4) > a",
+        "employeeCompetenciesReport" : ".active > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(5) > a",
+        "timeoffTransactionsReport" : ".active > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(6) > a",
+        "vacationBalancesReport" : ".active > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(7) > a",
+        "disciplinaryActionsReport" : ".active > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(8) > a",
+        "headcountReport" : ".active > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(9) > a",
+        "salariesReport" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(11) > a",
+        "salaryReconciliationReport" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(12) > a",
+        "terminationReport" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(13) > a",
+        "provisionsReport" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(14) > a",
+        "bankExportReport" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(15) > a",
+        "financialTransactionsReport" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(17) > a",
+        "monthlyTimesheetsReport" : ".open > .side-nav__submenu > .side-nav__submenu-items > .nano > .nano-content > :nth-child(18) > a",
+        "dailyTimesheetsReport" : ".nano-content > :nth-child(19) > a",
+        "airTicketTransactionsReport" : ".nano-content > :nth-child(20) > a",
+        "extraSalaryTransactionsReport" : ".nano-content > :nth-child(21) > a",
+        "loansReport" : ".nano-content > :nth-child(22) > a",
+        "salaryPackagesReport" : ".nano-content > :nth-child(23) > a",
+        "compaRatioReport" : ".nano-content > :nth-child(24) > a",
+        "socialSecurityMonthlySubscriptionsReport" : ".nano-content > :nth-child(26) > a",
+        "socialSecurityTerminationForm" : ".nano-content > :nth-child(27) > a",
+        "aR3Form" : ".nano-content > :nth-child(29) > a",
+        "aR2Form" : ".nano-content > :nth-child(30) > a",
+        "certifiedSalariesForm" : ".nano-content > :nth-child(31) > a",
+        "monthlyCertifiedSalariesReport" : ".nano-content > :nth-child(32) > a"
+    }
 }
 }

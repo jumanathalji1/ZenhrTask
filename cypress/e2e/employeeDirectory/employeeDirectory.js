@@ -1,8 +1,10 @@
 /// <reference types="Cypress" />
 import {Given, When, Then} from "cypress-cucumber-preprocessor/steps"
-import { commonPageActions } from "../../../PageObjects/Common/PageActions/commonPageActions"
+
 import { LoginPageActions } from "../../../PageObjects/LoginPage/PageActions/LoginPageActions"
 import { EmployeeDirectoryPageActions} from "../../../PageObjects/EmployeesDirectoryPage/PageActions/EmployeesDirectoryPageActions"
+import { commonPageActions } from "../../../PageObjects/Common/PageActions/commonPageActions"
+
 const Credintials = require("../../fixtures/creds.json")
 const commonActions = new commonPageActions
 const loginActions = new LoginPageActions

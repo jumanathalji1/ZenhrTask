@@ -2,13 +2,13 @@ const commonElementsLocators = require('../PageElements/CommonPageElements.json'
 export class commonPageActions{
 
     clickSideMenu(){
-        cy.get(commonElementsLocators.sideMenu).click()
+        cy.get(commonElementsLocators.sideMenu).click({force: true})
         return
     }
 
     checkSideMenuElementPageFound(mainLocator, subLocator){
-        cy.get(mainLocator).click()
-        cy.get(subLocator).click().then((link) => cy.request(link.prop('href')).its('status').should('not.equal', 404));
+        cy.get(mainLocator).click({force: true})
+        cy.get(subLocator).click({force: true}).then((link) => cy.request(link.prop('href')).its('status').should('not.equal', 404));
     }
 
     checkAllSideMenuElementsPageFound(){
@@ -22,12 +22,12 @@ export class commonPageActions{
     }
 
     clickEmployeesMenu(){
-        cy.get(commonElementsLocators.sideMenuLocators["employeesMenu"]).click()
+        cy.get(commonElementsLocators.sideMenuLocators["employeesMenu"]).click({force: true})
         return
     }
 
     clickEmployeeDirectory(){
-        cy.get(commonElementsLocators.sideMenuSubLocators["employeesMenu"]["employeeDirectory"]).click() 
+        cy.get(commonElementsLocators.sideMenuSubLocators["employeesMenu"]["employeeDirectory"]).click({force: true}) 
         return
     }
 
